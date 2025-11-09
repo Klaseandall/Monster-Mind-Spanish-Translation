@@ -1,0 +1,9 @@
+# Exported artifacts
+export/
+android/
+
+# Visual Studio Code ignores
+.vscode/
+
+# IntelliJ ignores
+.idea
