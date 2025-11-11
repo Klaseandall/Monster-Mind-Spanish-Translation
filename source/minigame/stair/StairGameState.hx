@@ -1147,11 +1147,11 @@ class StairGameState extends MinigameState
 		updateSexyTimer(elapsed);
 
 		if (button0.visible && button0.animation.frameIndex == 1 && FlxG.mouse.y < _helpButton.y + _helpButton.height && FlxG.mouse.x > _helpButton.x)
-		{
-			// user is mousing over the help button, but it also intersects button0's rectangle... un-highlight button0
-			button0.status = FlxButtonState.NORMAL;
-			button0.animation.frameIndex = 0;
-		}
+        {
+            // user is mousing over the help button, but it also intersects button0's rectangle... un-highlight button0
+            button0.status = 1; // RELEASED
+            button0.animation.frameIndex = 0;
+        }
 
 		// if the critters are both on stair 1-8 together... and they're colliding...
 		if (FlxSpriteKludge.overlap(stairStatus0.critter._targetSprite, stairStatus1.critter._targetSprite) &&
