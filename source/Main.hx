@@ -54,6 +54,9 @@ class Main extends Sprite
 
 	public static function main():Void
 	{
+		#if debug
+		PlayerData.cheatsEnabled = true;
+		#end
 		#if redirectTraces
 		FlxG.log.redirectTraces = true;
 		#end
