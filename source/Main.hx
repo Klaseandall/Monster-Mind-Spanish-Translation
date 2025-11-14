@@ -43,7 +43,7 @@ import puzzle.PuzzleState;
  */
 class Main extends Sprite
 {
-	public static var VERSION_STRING:String = "1.10.7-UNSTABLE";
+	public static var VERSION_STRING:String = "1.10.7-RELEASE";
 	public static var gameWidth:Int = 768; // Width of the game in pixels (might be less / more in actual pixels depending on your zoom).
 	public static var gameHeight:Int = 432; // Height of the game in pixels (might be less / more in actual pixels depending on your zoom).	
 
@@ -54,9 +54,7 @@ class Main extends Sprite
 
 	public static function main():Void
 	{
-		#if debug
 		PlayerData.cheatsEnabled = true;
-		#end
 		#if redirectTraces
 		FlxG.log.redirectTraces = true;
 		#end
